@@ -173,8 +173,8 @@ func init() {
 	flag.StringVar(&alarmNamePrefix, "a", "", "Alarm name prefix")
 	flag.StringVar(&snsTopic, "s", "", "a SNS topic to notify")
 	flag.BoolVar(&running, "r", false, "Create alarms only for running instances")
-	flag.StringVar(&action, "a", "Terminate", "EC2 action to take when alarm is triggered: Terminate, Stop, or Reboot (default: Terminate))")
-	flag.Float64Var(&threshold, "t", 1.0, "CPU Utilization threshold to trigger alarm (default: 1.0)")
+	flag.StringVar(&action, "action", "Terminate", "EC2 action to take when alarm is triggered: Terminate, Stop, or Reboot (default: Terminate))")
+	flag.Float64Var(&threshold, "thres", 1.0, "CPU Utilization threshold to trigger alarm (default: 1.0)")
 	flag.IntVar(&period, "p", 900, "Period in seconds (default: 900)")
 }
 
